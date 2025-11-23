@@ -15,9 +15,7 @@ import { Component } from '@angular/core';
               Frontend Developer
             </h3>
             <p class="text-lg text-gray-600 leading-relaxed"> 
-              Here you go — short, clean, and with **University of Port Harcourt** spelled out:
-
----
+              
 
 I'm a Frontend Developer with 3+ years of experience 
  building modern and user-focused web applications. 
