@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from '../services/contact.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
+  imports: [CommonModule, ReactiveFormsModule, HttpClientModule],
   template: `
     <section id="contact" class="py-20 bg-gray-50">
       <div class="container mx-auto px-6">
@@ -10,6 +15,18 @@ import { Component } from '@angular/core';
           Get In <span class="text-accent">Touch</span>
         </h2>
         <div class="max-w-4xl mx-auto">
+          <form class="mb-8 bg-white rounded-lg shadow-xl p-6 md:p-8" [formGroup]="form" (ngSubmit)="submit()">
+            <h3 class="text-2xl font-semibold mb-4">Send a message</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <input formControlName="name" placeholder="Your name" class="p-3 border rounded" />
+              <input formControlName="email" placeholder="Your email" class="p-3 border rounded" />
+            </div>
+            <textarea formControlName="message" rows="5" placeholder="Your message" class="w-full mt-4 p-3 border rounded"></textarea>
+            <div class="mt-4 flex items-center gap-4">
+              <button type="submit" [disabled]="loading || form.invalid" class="px-6 py-2 bg-accent text-white rounded-lg">{{ loading ? 'Sending...' : 'Send Message' }}</button>
+              <div *ngIf="status" [class.text-green-600]="status === 'ok'" [class.text-red-600]="status === 'error'">{{ message }}</div>
+            </div>
+          </form>
           <div class="bg-white rounded-lg shadow-xl p-8 md:p-12">
             <p class="text-center text-lg text-gray-600 mb-8">
               I'm currently available for freelance work and open to discussing new projects.
@@ -55,4 +72,38 @@ import { Component } from '@angular/core';
     </section>
   `
 })
-export class ContactComponent {}
+export class ContactComponent {
+  form = this.fb.group({
+    name: ['', [Validators.required, Validators.minLength(2)]],
+    email: ['', [Validators.required, Validators.email]],
+    message: ['', [Validators.required, Validators.minLength(10)]]
+  });
+
+  loading = false;
+  status: 'idle' | 'ok' | 'error' = 'idle';
+  message = '';
+
+  constructor(private fb: FormBuilder, private contact: ContactService) {}
+
+  submit() {
+    if (this.form.invalid) return;
+    this.loading = true;
+    this.status = 'idle';
+    this.message = '';
+
+    this.contact.sendMessage(this.form.value as any).subscribe({
+      next: () => {
+        this.status = 'ok';
+        this.message = 'Message sent — I will get back to you soon.';
+        this.form.reset();
+        this.loading = false;
+      },
+      error: (err) => {
+        console.error(err);
+        this.status = 'error';
+        this.message = err?.error?.error || 'Failed to send message — please try again later.';
+        this.loading = false;
+      }
+    });
+  }
+}
