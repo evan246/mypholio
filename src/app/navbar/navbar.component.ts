@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
           <li><a href="#about" class="text-gray-700 hover:text-accent transition">About</a></li>
           <li><a href="#skills" class="text-gray-700 hover:text-accent transition">Skills</a></li>
           <li><a href="#projects" class="text-gray-700 hover:text-accent transition">Projects</a></li>
-          <li><a href="#contact" class="text-gray-700 hover:text-accent transition">Contact</a></li>
+          <li><a href="#contact" class="text-gray-700 hover:text-accent transition">Contacts</a></li>
         </ul>
         <button
           (click)="toggleMenu()"
