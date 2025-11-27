@@ -34,4 +34,10 @@ import { FooterComponent } from './app/footer/footer.component';
 })
 export class App {}
 
-bootstrapApplication(App);
+bootstrapApplication(App).catch(err => {
+  // Log bootstrap errors (helps diagnose DI errors like NG0201 during production)
+  // Keep a clear stack trace and rethrow so the process still surfaces the failure.
+  console.error('bootstrapApplication error:', err && err.message ? err.message : err);
+  console.error(err);
+  throw err;
+});
