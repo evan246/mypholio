@@ -35,7 +35,7 @@ import { CommonModule } from '@angular/common';
                   [href]="project.githubLink"
                   target="_blank"
                   class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
-                >
+                > 
                   GitHub
                 </a>
               </div>
