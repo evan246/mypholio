@@ -70,8 +70,8 @@ export class ProjectsComponent {
       githubLink: ''
     },
     {
-      title: 'Your Next Project Here',
-      description: 'A placeholder for your upcoming project. This space is ready for your next amazing work.',
+      title: 'My Next Project Here',
+      description: 'A placeholder for My upcoming project. This space is ready for My next amazing work.',
       technologies: ['Angular', 'React', 'TypeScript'],
       liveLink: '',
       githubLink: ''
