@@ -51,14 +51,14 @@ export class ProjectsComponent {
     {
       title: 'Account Linking App',
       description: 'A secure account linking and card activation interface with real-time validation and clean UI.',
-      technologies: ['Angular', 'TypeScript', 'TailwindCSS'],
+      technologies: ['React', 'TypeScript', 'TailwindCSS'],
       liveLink: 'https://accountlinking-f9lpneadm-anetoh-evangeline-chidiogos-projects.vercel.app/card-inventory/card-activation',
       githubLink: ''
     },
     {
       title: 'Banking Application',
       description: 'A modern digital banking dashboard featuring authentication, transfers, analytics, and user management.',
-      technologies: ['Angular', 'TypeScript', 'Bootstrap'],
+      technologies: ['React', 'TypeScript', 'Bootstrap'],
       liveLink: 'http://banking-jvsgr247s-anetoh-evangeline-chidiogos-projects.vercel.app',
       githubLink: ''
     },
