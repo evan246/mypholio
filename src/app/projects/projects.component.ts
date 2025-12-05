@@ -56,8 +56,8 @@ export class ProjectsComponent {
       githubLink: ''
     },
     {
-      title: 'Banking Application',
-      description: 'A modern digital banking dashboard featuring authentication, transfers, analytics, and user management.',
+      title: 'Banking application',
+      description: 'A modern digital banking dashboard featuring authentication, transfers, analytics, and users management.',
       technologies: ['React', 'TypeScript', 'Bootstrap'],
       liveLink: 'http://banking-jvsgr247s-anetoh-evangeline-chidiogos-projects.vercel.app',
       githubLink: ''
