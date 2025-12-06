@@ -71,7 +71,7 @@ export class ProjectsComponent {
     },
     {
       title: 'My Next Project Here',
-      description: 'A placeholder for My upcoming project. This space is ready for My next amazing work.',
+      description: 'A placeholder for My upcoming projects. This space is ready for My next amazing work.',
       technologies: ['Angular', 'React', 'TypeScript'],
       liveLink: '',
       githubLink: ''
