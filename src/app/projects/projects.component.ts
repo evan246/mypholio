@@ -29,7 +29,7 @@ import { CommonModule } from '@angular/common';
                   class="px-6 py-2 bg-accent text-white rounded-lg hover:bg-accent-dark transition"
                 >
                   View Lives
-                  
+
                 </a>
                 <a
                   *ngIf="project.githubLink"
@@ -52,7 +52,7 @@ export class ProjectsComponent {
     {
       title: 'Account Linking App',
       description: 'A secure account linking and card activation interface with real-time validation and clean UI.',
-      technologies: ['React', 'TypeScript', 'TailwindCSS'],
+      technologies: ['React', 'TypeScript', 'Tailwind'],
       liveLink: 'https://accountlinking-f9lpneadm-anetoh-evangeline-chidiogos-projects.vercel.app/card-inventory/card-activation',
       githubLink: ''
     },
