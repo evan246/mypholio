@@ -51,7 +51,7 @@ export class ProjectsComponent {
   projects = [
     {
       title: 'Account Linking App',
-      description: 'A secure account linking and card activation interface with real-time validation and clean UI.',
+      description: 'A banking operations dashboard built with Angular that allows staff to verify customers using account number, BVN, or phone number. After verification, the system displays the customer’s profile, accounts, and actions like card requests and activation. The project showcases API integration,  reusable components, clean UI design, and real fintech workflow implementation.',
       technologies: ['React', 'TypeScript', 'Tailwind'],
       liveLink: 'https://accountlinking-f9lpneadm-anetoh-evangeline-chidiogos-projects.vercel.app/card-inventory/card-activation',
       githubLink: ''
