@@ -52,14 +52,14 @@ export class ProjectsComponent {
     {
       title: 'Account Linking App',
       description: 'A banking operations dashboard built with Angular that allows staff to verify customers using account number, BVN, or phone number. After verification, the system displays the customer’s profile, accounts, and actions like card requests and activation. The project showcases API integration,  reusable components, clean UI design, and real fintech workflow implementation.',
-      technologies: ['React', 'TypeScript', 'Tailwind'],
+      technologies: ['Angular', 'TypeScript', 'Tailwind'],
       liveLink: 'https://accountlinking-f9lpneadm-anetoh-evangeline-chidiogos-projects.vercel.app/card-inventory/card-activation',
       githubLink: ''
     },
     {
       title: 'Banking application',
       description: 'A modern digital banking dashboard featuring authentication, transfers, analytics, and users management.',
-      technologies: ['React', 'TypeScript', 'Bootstrap'],
+      technologies: ['Angular', 'TypeScript', 'Bootstrap'],
       liveLink: 'http://banking-jvsgr247s-anetoh-evangeline-chidiogos-projects.vercel.app',
       githubLink: ''
     },
