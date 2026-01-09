@@ -26,7 +26,7 @@ import { Component } from '@angular/core';
 </p>
 
             <p class="text-lg text-gray-700 leading-relaxed">
-              I specialize in <strong>Angular 16-20, TypeScript, React, TailwindCSS, NGRX, Bootstrap, HTML, CSS,
+              I specialize in <strong>Angular 16-20, Vanilla javascript, TypeScript, React, TailwindCSS, NGRX, Bootstrap, HTML, CSS,
               and Ant Design</strong>. I have worked with reputable organizations both locally and internationally,
               and I'm active on Upwork, open to short and long-term contracts.
             </p>

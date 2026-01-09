@@ -59,14 +59,14 @@ export class ProjectsComponent {
     {
       title: 'Banking application',
       description: 'A modern digital banking dashboard featuring authentication, transfers, analytics, and users management.',
-      technologies: ['Angular', 'TypeScript', 'Bootstrap'],
+      technologies: ['React', 'TypeScript', 'Bootstrap'],
       liveLink: 'http://banking-jvsgr247s-anetoh-evangeline-chidiogos-projects.vercel.app',
       githubLink: ''
     },
     {
       title: 'Loch Scientific',
       description: 'Corporate website for an oil servicing company with professional UI, service pages, and animations.',
-      technologies: ['Angular', 'TypeScript', 'CSS'],
+      technologies: ['React', 'TypeScript', 'CSS'],
       liveLink: 'https://lochscientific.vercel.app/',
       githubLink: ''
     },

@@ -31,7 +31,7 @@ export class SkillsComponent {
     { name: 'TailwindCSS', icon: '💨' },
     { name: 'Bootstrap', icon: '🅱️' },
     { name: 'NGRX', icon: '🔄' },
-    { name: 'Ant Design', icon: '🐜' },
+    { name: 'vanilla javascript', icon: '🐜' },
     { name: 'Git & GitHub', icon: '🔧' },
     { name: 'REST APIs', icon: '🔌' },
     { name: 'Responsive Design', icon: '📱' }
